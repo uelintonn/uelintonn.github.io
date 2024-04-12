@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge coding</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <main>
+
+
+        <div class="texto__central">
+            <textarea onkeyup="checkText(event)" class="input_text" placeholder="Digite seu texto aqui..."></textarea>
+
+            <div class="container__botoes">
+                <span>
+                    <img src="/assets/bi_exclamation-circle-fill.svg" class="alerta" alt="exclamação">
+                    <p>Apenas letras minúsculas e sem acento.</p>
+                </span>
+
+                <div class="botoes">
+                    <button class="encrypt" onclick="btnEncrypt(),removeRightSideBar()">Criptografar</button>
+                    <button class="decrypt" onclick="btnDecrypt()">Descriptografar</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container__direito">
+            <img src="assets/busca.svg.svg" class="search_image" alt="Mulher segurando lupa">
+            <h2>Nenhuma mensagem encontrada</h2>
+            <p>Digite à esquerda um texto que você deseja criptografar ou descriptografar.</p>
+        </div>
+
+        <div class="container__direito_output" style="display: none;">
+            <textarea class="output_text"></textarea>
+            <button onclick="copy()" class="copy">Copiar</button>
+        </div>
+
+    </main>
+
+    <footer class="page-footer">
+        <p> Desenvolvido por <a href="http://github.com/uelintonn" target="blank">Uelinton Andrade</a>. Confie e acredite em Deus!</p> 
+       
+    
+      </footer>
+</body>
+
+<script src="/script.js"></script>
+</html>
